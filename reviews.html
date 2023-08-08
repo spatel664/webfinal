@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts.js" defer></script>
+    <title>Rock Paper Scissors Reviews</title>
+    <!-- Add your CSS and other stylesheets here -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Player Reviews</h1>
+    </header>
+    <main>
+        <section id="reviews">
+            <!-- Reviews will be dynamically added here -->
+        </section>
+        <section id="add-review">
+            <h2>Add Your Review</h2>
+            <form id="reviewForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <br>
+                <label for="rating">Rating (1-5):</label>
+                <input type="number" id="rating" name="rating" min="1" max="5" required>
+                <br>
+                <label for="review">Review:</label>
+                <textarea id="review" name="review" required></textarea>
+                <button type="submit">Create</button>
+            </form>
+        </section>
+    </main>
+    <!-- Load the data.js and script.js files -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
